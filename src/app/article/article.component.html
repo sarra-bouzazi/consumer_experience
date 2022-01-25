@@ -1,0 +1,178 @@
+<div class="container-center-horizontal">
+  <div class="article screen">
+    <div class="overlap-group">
+      <img
+        class="x4309857"
+        src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/608187330a15219b63fac3de/img/4309857@1x.png"
+      />
+      <div class="footer">
+        <img
+          class="asset-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/asset-3@1x.png"
+        />
+        <div class="group-468">
+          <div class="group-465">
+            <h1 class="text-1 poppins-bold-white-40px">Like Our Service? Subscribe Now</h1>
+            <p class="text-2 roboto-normal-white-16px2">
+              <span class="span roboto-medium-white-16px"></span
+              ><span class="span roboto-normal-white-16px-22"
+                >As a app web crawler expert, I help organizations adjust to the expanding significance of internet
+                promoting.</span
+              >
+            </p>
+          </div>
+          <img
+            class="asset-2"
+            src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/asset-2-1@1x.png"
+          />
+          <div class="group-467 border-1px-white">
+            <div class="group-466"><div class="subscribe poppins-medium-biloba-flower-16px">Subscribe</div></div>
+            <div class="enter-your-email poppins-normal-white-16px">Enter your email</div>
+          </div>
+        </div>
+        <div class="overlap-group1-1">
+          <div class="group-479">
+            <p class="text-3 roboto-normal-white-16px-22">© 2020 — All Rights Reserved</p>
+            <div class="group-476">
+              <div class="group-470">
+                <img
+                  class="f1"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/f-1-@1x.png"
+                />
+              </div>
+              <div class="group-471">
+                <img
+                  class="path-633"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/path-633@1x.png"
+                />
+              </div>
+              <div class="group-473">
+                <div class="instagram">
+                  <div class="overlap-group2">
+                    <img
+                      class="path-634"
+                      src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607c4b5006519b6f7046a519/img/path-634@1x.png"
+                    />
+                    <img
+                      class="path-635"
+                      src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/path-635@1x.png"
+                    />
+                    <div class="ellipse-10"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-478">
+            <div class="overlap-group3">
+              <div class="text-4 roboto-medium-white-16px">About Us<br />Contact us<br />Careers<br />Support</div>
+              <div class="text-5 roboto-medium-white-16px">FAQ<br />Terms<br />Privacy<br />Blog</div>
+            </div>
+            <div class="about poppins-bold-white-20px">About</div>
+            <div class="place poppins-bold-white-20px">Contact</div>
+            <img
+              class="trust"
+              src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/trust@1x.png"
+            />
+          </div>
+          <img
+            class="line-4"
+            src="https://anima-uploads.s3.amazonaws.com/projects/607495dd3840f78fc11be85f/releases/607499f63840f78fc11be875/img/line-4@1x.png"
+          />
+          <div class="follow-us poppins-bold-white-20px">Follow Us</div>
+          <div class="countries poppins-bold-white-20px">Countries</div>
+        </div>
+      </div>
+      <div class="article-details arial-bold-woodsmoke-40px">Article details</div>
+      <div class="group-3350 border-7px-gray-chateau">
+        <div class="add-article segoeui-bold-black-30px"><button type="submit" class="btn " (click)="catname()"> article</button></div>
+      </div>
+      <div class="row">
+    <div class="col-md-3 col-sm-6" *ngFor ="let rep of menu" >
+        <div class="product-grid">
+            <div class="id_grabber" #id>{{rep.arid}}</div>
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="{{rep.img}}">
+                </a>
+                <ul class="product-links">
+                    <li><a ><i class="fa fa-shopping-bag"></i>Modifier</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">{{rep.name}}</a></h3>
+                <h1 class="description">{{rep.descripiption}}</h1>
+                <div class="price">{{rep.price}} DT</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="group-3339">
+        <div class="rectangle-1 border-10px-gray-chateau"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name"></div>
+        <div class="title segoeui-bold-cod-gray-30px">Name</div>
+        <div class="description segoeui-bold-cod-gray-30px">Description</div>
+      </div>
+      <div class="group-3346">
+        <div class="category segoeui-bold-cod-gray-30px">Category</div>
+      
+        <div >
+          &nbsp;  &nbsp;<br>
+          <div class="selectWrapper">&nbsp;
+            <select class="selectBox" id="catname">
+              <option value="" disabled selected>Choose category</option>
+              <option value="Shopping & Mode">Shopping & Mode</option>
+              <option value="Electronique & Technologie">Electronique & Technologie</option>
+              <option value="Vacances & Voyages">Vacances & Voyages</option>
+              <option value="Réstaurants">Réstaurants</option>
+          </select>
+          </div>
+        </div>
+
+    
+      </div>
+      <div class="img">         
+       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="file" type="file" (change)= onSelectFile($event)>
+      </div>
+    <div class="price">  
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="price" placeholder="Dt">
+    </div>
+      <div class="rectangle-80 border-10px-gray-chateau"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="textarea"  rows="15" cols="60"   placeholder="Voici une indication." id="description"></textarea></div>
+      <div class="group-3351">
+        <div class="pickers-combo-b-collapsed-rest">
+          <div class="overlap-group-1">
+            <div class="elements-picker-frame-base">
+              <div class="picker-border-stroke border-2px-black"></div>
+            </div>
+            <div class="chevron-down-12-12px-footprint">
+              <div class="x12px-12px-footprint">
+                <div class="overlap-group-2">
+                  <div class="footprint"></div>
+                  <div class="icon segoemdl2assets-regular-normal-black-12px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="selected-list-item segoeui-regular-normal-black-20px">English</div>
+          </div>
+        </div>
+        <div class="pickers-combo-b-collapsed-rest-1">
+          <div class="overlap-group-1">
+            <div class="elements-picker-frame-base">
+              <div class="picker-border-stroke border-2px-black"></div>
+            </div>
+            <div class="chevron-down-12-12px-footprint">
+              <div class="x12px-12px-footprint">
+                <div class="overlap-group-2">
+                  <div class="footprint"></div>
+                  <div class="icon segoemdl2assets-regular-normal-black-12px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="selected-list-item segoeui-regular-normal-black-20px">USA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<h2>Here all articles</h2>
+<table class="table table-sm table-dark">
+    <div class="table-responsive">
+      <table class="table align-middle">
+        <thead>
+          <tr>
+              <th>ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Commentaire</th>
+            
+            <th>Delete</th>
+            <th>Modify</th>
+            
+           
+          </tr>
+        </thead>
+        <tbody>
+       
+          <tr *ngFor="let rep of articles">
+           
+            <td id='{{rep.arid}}'> {{rep.arid}} </td>
+            <td id="image"><img src='{{rep.image}}' width="300" height="300"></td>
+       <td> <input id="name" type="text" value="{{rep.name}}"> 
+                <td> <input id="description" type="text" value="{{rep.description}}" >  </td>
+                 
+                <td> <input id="catname" type="text" value="{{rep.catname}}" >  </td>
+                <td><input id="price" type="text" value="{{rep.price}}" ></td>
+                <td>
+                  <tr *ngFor="let comment of rep.comments">
+                    <td><input type="text" id="commentaire" value="{{comment.commentaire}}"></td>
+                    <td><button (click)="deletecom(comment.comid)">Delete</button></td>
+                  </tr>                </td>
+     
+        <td ><button (click)="delete(rep.arid)">Delete</button></td>
+          <td ><button (click)="modify(rep.arid)">Modify</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </table>
